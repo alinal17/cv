@@ -14,14 +14,18 @@
       display: flex; /* Use flexbox for layout */
     }
     
-    iframe, /* Apply styles to iframe */
+    .leftiframe, /* Apply styles to iframe */
     .container2 {
       height: 100vh; /* Full height of the viewport */
     }
-    iframe{
+    .leftiframe{
       flex: 0.2; /* Equal distribution of space */
 
     }
+
+    section .leftiframe {
+    height: 200px; /* Adjust the height value as per your requirement */
+}
     
     .container2{
       flex: 1; /* Equal distribution of space */
@@ -49,6 +53,7 @@
     }
     .section {
       margin-bottom: 30px;
+      color: #555;
     }
     .section-header {
       border-bottom: 2px solid #9b8181;
@@ -62,8 +67,11 @@
       list-style-type: none;
       padding: 0;
     }
+    nav a:hover {
+            background-color: #555;
+        }
     .container2,
-    iframe {
+    .leftiframe {
   max-width: 800px; /* Increased maximum width */
   margin: 50px auto; /* Adjusted margins to center horizontally */
   padding: 40px;
@@ -73,7 +81,17 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-
+.inneriframe {
+  max-width: 600px; /* Increased maximum width */
+  margin: 25px auto; /* Adjusted margins to center horizontally */
+  padding: 15px;
+  background-color: #f1d69b;
+  border-radius: 25px; /* Increased border radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+  margin-left: 5px;
+  height:100%;
+  margin-right: 5px;
+}
 
 
     .section-content li {
@@ -82,7 +100,7 @@
   </style>
 </head>
 <body>
-    <iframe src="exemplu_cadru1.html"></iframe>
+    <iframe class="leftiframe" src="exemplu_cadru1.html"></iframe>
 
   <div class="container2">
     <header>
@@ -93,11 +111,16 @@
       <div class="section-header">
        
 
-    <div class="section">
-      <div class="section-header">
-        <h2>Education</h2>
+    
+
+   
+
+        <h2>   <b><a href="education.html" target="iframe_a">Education</a></h2></b>
       </div>
+    
       <div class="section-content">
+        
+    <iframe  height="500" src="education.html" class="inneriframe" name="iframe_a"></iframe>
         <ul>
           <li>Bachelor of Medical bioengineering faculty, University of Medicine and Pharmacy "Grigore T. Popa", 2018-2022</li>
           <li>Bachelor of "Grigore Ghica Vodă" school</li>
@@ -116,27 +139,18 @@
       </div>
     </div>
 
-    <section>
-        <h1>Personal Interests</h1>
-        <ul class="skill-set">
-          <li>Faith</li>
-          <li>Biblical Studies</li>
-          <li>Playing Guitar</li>
-          <li>Song Writing</li>
-          <li>Health & Nutrition</li>
-          <li>Reading</li>
-        </ul>
-      </section>
-      <section>
-        <div class="handmade">
-          <p>handmade by <em> Anthony Adamski</em></p>
-        </div>
-      </section>
+    <div class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+      </div>
+      <div class="section-content">
+        <p> Basic SQL skills, Knowledge of Windows, Microsoft Office including 
+            Word, Excel, PowerPoint and Access, Availability to participate at the Internship Program 
+            full-time, Base knowledge of the Uipath, Matlab, C++, Jira, 
+            Postman, Selenium, Git, Cypress React, Css, Html</p>
+      </div>
     </div>
-
   </div>
-
-</div>
 </body>
 </html>
     
