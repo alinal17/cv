@@ -3,12 +3,23 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.card {
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(77, 8, 8, 0.2);
+  transition: 0.3s;
+  margin-right: 40px;;
+  width: 25%;
+  background-color:azure;
+  border-radius:10px;
+}
+.card2 {
   box-shadow: 0 4px 8px 0 rgba(77, 8, 8, 0.2);
   transition: 0.3s;
   width: 25%;
   background-color:azure;
   border-radius:10px;
+}
+.cardContainer{
+    display:flex;
 }
 
 .card:hover {
@@ -18,17 +29,28 @@
 .container {
   padding: 2px 16px;
 }
+.containe {
+  padding: 2px 16px;
+}
 </style>
 </head>
 <body>
+<div class="cardContainer">
+    <div class="card1">
+    <img src="image1.png" alt="Avatar" style="width:80%" >
 
-<div class="card">
-  <img src="image1.png" alt="Avatar" style="width:80%" >
-  <div class="container">
- 
-    <p>Listening to music</p> 
-  </div>
+    <div class="container">
+    
+        <p>Listening to music</p> 
+    </div>
 </div>
-
+    <div class="card2">
+        <img src="image2.png" alt="Avatar" style="width:80%" >
+    
+        <div class="containe">
+    
+        <p>   Roller skating</p> 
+        </div>
+    </div>
 </body>
 </html> 
