@@ -11,17 +11,8 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #c0cddf;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
+
+      
         h1, h2 {
             color: #e85a5a;
         }
@@ -32,18 +23,43 @@
             list-style-type: disc;
             padding-left: 20px;
         }
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .sageata {
+    position: absolute;
+    top: 10%; /* Adjust as needed */
+    transform: translateY(-50%);
+    right: 440px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(222, 131, 13); /* Modify arrow color and size here */
+}
+
+.matlab {
+    position: absolute;
+    top: 10%;
+    right: 480px; /* Adjust as needed */
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20%; /* Rounded corners */
+    border: 2px solid orange; /* Orange border */
+}
+
     </style>
 </head>
 <body>
 
 <header>
-    <h1>What I learned in faculty?</h1>
+    <img src="matlab.png" height="18%" width="18%" class="matlab"><div class="sageata "></div>
+
 </header>
 
-<div class="container">
-    <section> 
-     </section>
-</div>
 
 </body>
 </html>
