@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider Example</title>
+    <style>
+        .slidecontainer {
+            width: 50%;
+            margin: auto;
+            margin-left: 20px;
+        }
+
+        .slider-container {
+            margin-bottom: 0px; /* Add space between pairs */
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #f2eded;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            margin-left: 10px; /* Adjust margin as needed */
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #5410db;
+            cursor: pointer;
+            z-index: 1; /* Ensure it's above the background */
+        }
+        
+        .left-paragraph {
+            float: left;
+            margin-right: 130px; /* Adjust the margin as needed */
+            color:red
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="slidecontainer">
+        <div class="slider-container">
+            <p class="left-paragraph attention-to-detail">Attention to Detail</p>
+            <input type="range" min="1" max="100" value="100" class="slider">
+        </div>
+        <div class="slider-container">
+            <p class="left-paragraph">Creativity</p>
+            <input type="range" min="1" max="100" value="99" class="slider">
+        </div>
+        <div class="slider-container">
+            <p class="left-paragraph">Curiosity</p>
+            <input type="range" min="1" max="100" value="90" class="slider">
+        </div>
+        <div class="slider-container">
+            <p class="left-paragraph">Ability To Work</p>
+            <input type="range" min="1" max="100" value="95" class="slider">
+        </div>
+        <div class="slider-container">
+            <p class="left-paragraph">Adaptability</p>
+            <input type="range" min="1" max="100" value="87" class="slider">
+            <div class="slider-container">
+                <p class="left-paragraph">Strong communication skills</p>
+                <input type="range" min="1" max="100" value="98" class="slider">
+    </div>
+</body>
+</html>

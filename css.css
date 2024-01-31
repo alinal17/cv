@@ -17,3 +17,11 @@
     color: #160505;
     cursor: grab;
 }
+#showMe {
+    animation: cssAnimation 0s 5s forwards;
+    visibility: hidden;
+  }
+  
+  @keyframes cssAnimation {
+    to   { visibility: visible; }
+  }
