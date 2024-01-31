@@ -50,6 +50,17 @@
     border-radius: 20%; /* Rounded corners */
     border: 2px solid orange; /* Orange border */
 }
+
+.sageat {
+    position: absolute;
+    top: 150px; /* Adjust as needed */
+    transform: translateY(-50%);
+    right: 440px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(222, 131, 13); /* Modify arrow color and size here */}
 .limbajc {
     position: absolute;
     top: 150px;
@@ -62,8 +73,17 @@
     border: 2px solid orange;
     z-index: 2;
 }
-
- 
+.sagea {
+    position: absolute;
+    top: 250px;
+    transform: translateY(-50%);
+    right: 440px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(222, 131, 13);
+}
 
 .autocad {
     position: absolute;
@@ -77,6 +97,16 @@
     border: 2px solid orange;
     z-index: 3;
 }
+.sage {
+    position: absolute;
+    top: 350px; /* Adjust as needed */
+    transform: translateY(-50%);
+    right: 440px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(222, 131, 13); /* Modify arrow color and size here */}
 .orcad {
     position: absolute;
     top: 350px;
@@ -89,6 +119,16 @@
     border: 2px solid orange;
     z-index: 4;
 }
+.sag {
+    position: absolute;
+    top: 450px; /* Adjust as needed */
+    transform: translateY(-50%);
+    right: 440px; /* Adjust as needed */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid rgb(222, 131, 13); /* Modify arrow color and size here */}
 .proteus {
     position: absolute;
     top: 450px;
@@ -101,18 +141,67 @@
     border: 2px solid orange;
     z-index: 5;
 }
+.cont{
+    border: 2px solid black;
+    padding: 7px;
+    width: 389px;
+    height: 54px;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+}
+.con{
+    border: 2px solid black;
+    padding: 7px;
+    width: 389px;
+    height: 54px;
+    position: absolute;
+    top: 114px; /* Adjustată pentru a coborî containerul cu un rând mai jos */
+    right: 30px;
+}
+.coni{
+    border: 2px solid black;
+    padding: 7px;
+    width: 389px;
+    height: 54px;
+    position: absolute;
+    top: 214px; /* Adjustată pentru a coborî containerul cu un rând mai jos */
+    right: 30px;
+}
+.ct{
+    border: 2px solid black;
+    padding: 7px;
+    width: 389px;
+    height: 54px;
+    position: absolute;
+    top: 311px; /* Adjustată pentru a coborî containerul cu un rând mai jos */
+    right: 30px;
+}
+.co{
+    border: 2px solid black;
+    padding: 7px;
+    width: 389px;
+    height: 54px;
+    position: absolute;
+    top: 411px; /* Adjustată pentru a coborî containerul cu un rând mai jos */
+    right: 30px;
+}
+
+
 
     </style>
 </head>
 <body>
 
-<header>
-    <img src="matlab.png" height="16%" width="15%" class="matlab"><div class="sageata "></div>
-    <img src="limbajc.png" height="15%" width="20%" class="limbajc"><div class="sageata "></div>
-    <img src="autocad.png" height="15%" width="20%" class="autocad"><div class="sageata "></div>
-    <img src="orcad.png" height="15%" width="20%" class="orcad"><div class="sageata "></div>
-    <img src="proteus.png" height="15%" width="20%" class="proteus"><div class="sageata "></div>
-</header>
+
+    <header>
+        <img src="matlab.png" height="16%" width="15%" class="matlab"><div class="sageata" ></div><div class="cont">text</div>
+        <img src="limbajc.png" height="15%" width="20%" class="limbajc"><div class="sageat"></div><div class="con">tet</div>
+        <img src="autocad.png" height="15%" width="20%" class="autocad"><div class="sagea"></div><div class="coni">text</div>
+        <img src="orcad.png" height="15%" width="20%" class="orcad"><div class="sage"></div><div class="ct">text</div>
+        <img src="proteus.png" height="15%" width="20%" class="proteus"><div class="sag"></div><div class="co">text</div>
+    </header>
+    
 
 
 </body>
