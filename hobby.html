@@ -3,54 +3,79 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.card1 {
-  box-shadow: 0 4px 8px 0 rgba(77, 8, 8, 0.2);
-  transition: 0.3s;
-  margin-right: 40px;;
-  width: 25%;
-  background-color:azure;
-  border-radius:10px;
-}
-.card2 {
-  box-shadow: 0 4px 8px 0 rgba(77, 8, 8, 0.2);
-  transition: 0.3s;
-  width: 25%;
-  background-color:azure;
-  border-radius:10px;
-}
-.cardContainer{
-    display:flex;
-}
+    .cardContainer {
+        display: flex;
+        justify-content: center; /* Aliniere orizontală la centru */
+        align-items: center; /* Aliniere verticală la centru */
+        height: 100vh; /* Înălțimea containerului */
+    }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(204, 61, 61, 0.2);
-}
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 300px; /* Lățimea cardului */
+        height: 332px; /* Înălțimea cardului */
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Aliniere conținut la centru */
+        align-items: center; /* Aliniere conținut la centru */
+    }
 
-.container {
-  padding: 2px 16px;
-}
-.containe {
-  padding: 2px 16px;
-}
+    .card img {
+        width: 80%; /* Lățimea imaginii */
+        height: auto; /* Înălțime automată pentru a menține proporțiile */
+        border-radius: 50%; /* Pentru a rotunji colțurile imaginii */
+    }
+
+    .container {
+        text-align: center; /* Aliniere text la centru */
+        margin-top: 20px; /* Spațiu deasupra textului */
+    }
 </style>
 </head>
 <body>
-<div class="cardContainer">
-    <div class="card1">
-    <img src="image1.png" alt="Avatar" style="width:80%" >
 
-    <div class="container">
-    
-        <p>Listening to music</p> 
-    </div>
-</div>
-    <div class="card2">
-        <img src="image2.png" alt="Avatar" style="width:80%" >
-    
-        <div class="containe">
-    
-        <p>   Roller skating</p> 
+<div class="cardContainer">
+    <div class="card">
+        <img src="image1.png" alt="Avatar" style="width:80%" >
+        <div class="container">
+            <p>Listening to music</p> 
         </div>
     </div>
+    <div class="card">
+        <img src="image2.png" alt="Avatar" style="width:80%" >
+        <div class="containe">
+            <p>Roller skating</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="image3.png" alt="Avatar" style="width:80%" >
+        <div class="container">
+            <p>Reading</p> 
+        </div>
+    </div>
+    <!-- Add three more cards below -->
+    <div class="card">
+        <img src="image4.png" alt="Avatar" style="width:80%" >
+        <div class="container">
+            <p>Hicking</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="cooking.png" alt="Avatar" style="width:80%" >
+        <div class="container">
+            <p>Cooking</p> 
+        </div>
+    </div>
+    <div class="card">
+        <img src="tennis.png" alt="Avatar" style="width:80%" >
+        <div class="container">
+            <p>Tennis</p> 
+        </div>
+    </div>
+</div>
+
 </body>
-</html> 
+</html>
