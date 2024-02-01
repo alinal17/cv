@@ -6,11 +6,20 @@
     list-style: none;
     margin-left: -30px;
     margin-bottom: 10px;
-    height: 50px;
+    height: 35px;
     padding: 10px;
   
     line-height: 1; /* Reducem înălțimea liniei textului */
 }
+p {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    height: 100%; /* Ensure the paragraph takes up the full height of its container */
+    margin: 0; /* Remove any default margins */
+}
+
+
 
 .contact-set li:hover {
     background: #9fc2d8;
